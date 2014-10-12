@@ -1,0 +1,91 @@
+/* 
+Layout Rules
+    CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.
+    Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
+*/
+
+nav[role="navigation"] {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    
+}
+nav[role="navigation"] ul {
+    list-style-type: none;
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+nav[role="navigation"] ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-mp4 {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+.banner-mp4 video {
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    @include body-font-regular;
+    @include fontSize(30px);
+    
+}
+
+.about ul {
+    list-style-type: none;
+    max-width: 400px;
+    width: 100%;
+}
+
+.about ul li img {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.attractions h1 {
+    @include body-font-regular;
+    @include fontSize(130px);
+    width: 100%;
+    margin-top: -310px;
+    text-align: center; 
+    color: #fff;
+    
+}
+
+.attractions img {
+
+    text-align: center;
+    width: 100%;
+    margin-bottom: 200px;
+    max-width: 960px;
+}
+
+.restaurants h1 {
+    text-align: center;
+    @include fontSize(120px);
+    width: 100%;
+}
+.restaurants h2 {
+    text-align: center;
+    @include body-font-italic;
+    @include fontSize(40px);
+    color: #d95858;
+}
+.restaurants img {
+    max-width: 960px;
+    width: 100%;
+}

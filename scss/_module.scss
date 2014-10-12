@@ -1,0 +1,61 @@
+/* 
+Module Rules
+    A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.
+    When defining the rule set for a module, avoid using IDs and element selectors, sticking only to class names. A module will likely contain a number of elements and there is likely to be a desire to use descendent or child selectors to target those elements. 
+*/
+
+.toggle-button {
+      animation: colorchange-font 5s linear 1s infinite alternate;
+   // background-color: $color;
+  //  color: $background-color;
+    display: inline-block;
+    @include headline-font;
+    @include fontSize(80px);
+    padding: 0 4px;
+    text-decoration: none;
+}
+.toggle-button svg path {
+       fill: $menu-color;
+        animation: colorchange-font 5s linear 1s infinite alternate;
+        transition: color 400ms linear;
+}
+
+.toggle-button a:hover svg path {
+       fill: darken($background-color, 12%);
+        transition: fill 400ms linear;
+}
+
+nav[role="navigation"] ul {
+    list-style-type: none;   
+}
+
+nav[role="navigation"] ul a {
+    border: 1px solid $color;
+    color: $color;
+    display: inline-block;
+    @include fontSize(30px);
+    @include body-font-regular;
+    margin-left: 8px;
+    margin-top: 4px;
+    padding: 0 4px;
+    text-decoration: none;
+    transition: border 400ms linear;
+    transition: color 400ms linear;
+}
+
+nav[role="navigation"] ul a:hover {
+    border: 1px solid lighten($color, 30%);   
+    color: lighten($menu-color, 30%);
+    transition: border 400ms linear;
+    transition: color 400ms linear;
+}
+
+.clickme a {
+    text-decoration: none;
+    border: 1px solid $color;
+    @include body-font-regular;
+    @include fontSize(50px);
+    color: #74fff4;
+    padding: 10px;
+}
+
