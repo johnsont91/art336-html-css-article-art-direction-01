@@ -59,3 +59,10 @@ nav[role="navigation"] ul a:hover {
     padding: 10px;
 }
 
+.nightlife h1 {  
+    animation: colorchange-font 10s linear 1s infinite alternate;
+    transition: border 400ms linear;
+    transition: color 400ms linear;
+}
+
+

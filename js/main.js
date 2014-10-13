@@ -26,6 +26,7 @@ $(function() {
             $('#banner-headline').bigtext();
             $('#attractions').bigtext();
             $('#restaurant-headline').bigtext();
+            $('#nightlife-headline').bigtext();
         }
     });
 });

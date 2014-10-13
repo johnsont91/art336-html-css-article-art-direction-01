@@ -89,3 +89,16 @@ nav[role="navigation"] ul li {
     max-width: 960px;
     width: 100%;
 }
+
+.nightlife h1 {
+    text-align: center;
+    margin-left: 80px;
+    width: 200px;
+    @include body-font-regular;
+    @include fontSize(250px);
+}
+
+.nightlife img {
+    max-width: 960px;
+    width: 100%;
+}
