@@ -91,3 +91,7 @@ $nightlife-color: #5effc1;
        50% { color: $background-color-alternate; }
        100% { color: $background-color; }
 }
+@mixin reversed-text {
+    background-color: $color;
+    color: $background-color;
+}

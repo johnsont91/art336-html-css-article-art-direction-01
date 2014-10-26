@@ -4,8 +4,9 @@ Base Rules
 */
 
 html {
-    animation: colorchange-background 5s linear 1s infinite alternate;
+    animation: colorchange-background 5s ease 1s infinite alternate;
     background-color: $background-color;
+    text-align: center;
     
 }
 
@@ -16,7 +17,7 @@ body {
     @include fontSize(20px);
     padding: 0 8px;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 500px;
     width: 100%;
 }
 
@@ -24,7 +25,16 @@ body {
 h1, h2 {
     @include fontSize(60px);
     @include headline-font;
+    color: #9bfff2;
 }
+
+.about h1 {
+    @include body-font-regular;
+    padding: -20px;
+    margin-bottom: -20px;
+    color: #000;   
+}
+
 
 h3 {
     text-align: center;
@@ -34,11 +44,12 @@ h3 {
     padding: 5px;
 }
 
-identity-headline {
-    text-align: center;
-    width: 200px;
-    
+.locations img {
+    width: 100%;
+    max-width: 500px;
 }
+
+
 
 
 

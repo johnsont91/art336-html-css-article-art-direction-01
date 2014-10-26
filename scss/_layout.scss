@@ -25,13 +25,18 @@ nav[role="navigation"] ul li {
     padding: 0;
 }
 
+.room p {
+    margin-top: 200px;   
+}
 .banner-mp4 {
+
     width: 100%;
     height: auto;
     max-width: 960px;
 }
 
 .banner-mp4 video {
+
     width: 100%;
 }
 
@@ -99,9 +104,4 @@ nav[role="navigation"] ul li {
     width: 200px;
     @include body-font-regular;
     @include fontSize(250px);
-}
-
-.nightlife img {
-    max-width: 960px;
-    width: 100%;
 }

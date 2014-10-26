@@ -13,10 +13,10 @@ Module Rules
     @include fontSize(80px);
     padding: 0 4px;
     text-decoration: none;
+    
 }
 .toggle-button svg path {
        fill: $menu-color;
-        animation: colorchange-font 5s linear 1s infinite alternate;
         transition: color 400ms linear;
 }
 
@@ -55,14 +55,20 @@ nav[role="navigation"] ul a:hover {
     border: 1px solid $color;
     @include body-font-regular;
     @include fontSize(50px);
-    color: #74fff4;
+    color: #ff74e4;
     padding: 10px;
 }
 
-.nightlife h1 {  
-    animation: colorchange-font 10s linear 1s infinite alternate;
-    transition: border 400ms linear;
-    transition: color 400ms linear;
+.about h1 {
+     @include reversed-text;  
 }
 
+footer[role="contentinfo"] {
+    @include fontSize(15px);
+    @include reversed-text;
+    animation: colorchange-font 5s linear 1s infinite alternate;
+    @include body-font-italic;
+    line-height: 5;
+    padding: 10px;
+}
 
